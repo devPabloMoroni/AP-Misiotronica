@@ -1,15 +1,13 @@
-//import logo from './logo.png';
-//import './App.css';
+import './App.css';
 
-import Home from './components/pages/Home';
-import About from './components/pages/About';
-import Contact from './components/pages/Contact';
-import Store from './components/pages/Store';
-import NotFound from './components/pages/NotFound';
+import Home from './components/pages/Home/Home';
+import About from './components/pages/About/About';
+import Contact from './components/pages/Contact/Contact';
+import Store from './components/pages/Store/Store';
+import NotFound from './components/pages/NotFound/NotFound';
 
-import Navbar from './components/layout/Navbar';
-import Banner from './components/layout/Banner';
-import Footer from './components/layout/Footer';
+import Navbar from './components/Navbar/Navbar';
+import Footer from './components/Footer/Footer';
 
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
@@ -26,12 +24,12 @@ const routes = createBrowserRouter(
 
 function App() {
   return (
-    <div className="container">
+    <>
       <Navbar />
-      <Banner />
       <RouterProvider router={routes} />
       <Footer />
-    </div>
+    </>
+      
   );
 }
 

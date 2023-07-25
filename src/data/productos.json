@@ -1,0 +1,72 @@
+[
+  {
+    "nombre": "Smartphone",
+    "marca": "Samsung",
+    "modelo": "Galaxy S21",
+    "precio": 800,
+    "stock": 25
+  },
+  {
+    "nombre": "Portátil",
+    "marca": "Dell",
+    "modelo": "Inspiron 15",
+    "precio": 1000,
+    "stock": 15
+  },
+  {
+    "nombre": "Televisor",
+    "marca": "Sony",
+    "modelo": "Bravia 4K",
+    "precio": 1200,
+    "stock": 10
+  },
+  {
+    "nombre": "Tablet",
+    "marca": "Apple",
+    "modelo": "iPad Air",
+    "precio": 600,
+    "stock": 30
+  },
+  {
+    "nombre": "Cámara DSLR",
+    "marca": "Canon",
+    "modelo": "EOS Rebel T7i",
+    "precio": 700,
+    "stock": 20
+  },
+  {
+    "nombre": "Auriculares inalámbricos",
+    "marca": "Sony",
+    "modelo": "WH-1000XM4",
+    "precio": 300,
+    "stock": 50
+  },
+  {
+    "nombre": "Altavoz Bluetooth",
+    "marca": "JBL",
+    "modelo": "Charge 4",
+    "precio": 150,
+    "stock": 40
+  },
+  {
+    "nombre": "Consola de videojuegos",
+    "marca": "Microsoft",
+    "modelo": "Xbox Series X",
+    "precio": 500,
+    "stock": 5
+  },
+  {
+    "nombre": "Impresora multifuncional",
+    "marca": "Epson",
+    "modelo": "WorkForce Pro WF-4740",
+    "precio": 250,
+    "stock": 12
+  },
+  {
+    "nombre": "Reproductor de Blu-ray",
+    "marca": "LG",
+    "modelo": "BP175",
+    "precio": 80,
+    "stock": 18
+  }
+]
