@@ -1,11 +1,16 @@
 //import logo from './logo.png';
 //import './App.css';
 
-import Home from './components/Home';
-import About from './components/About';
-import Contact from './components/Contact';
-import Store from './components/Store';
-import NotFound from './components/NotFound';
+import Home from './components/pages/Home';
+import About from './components/pages/About';
+import Contact from './components/pages/Contact';
+import Store from './components/pages/Store';
+import NotFound from './components/pages/NotFound';
+
+import Navbar from './components/layout/Navbar';
+import Banner from './components/layout/Banner';
+import Footer from './components/layout/Footer';
+
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
@@ -21,8 +26,11 @@ const routes = createBrowserRouter(
 
 function App() {
   return (
-    <div className="App">
+    <div className="container">
+      <Navbar />
+      <Banner />
       <RouterProvider router={routes} />
+      <Footer />
     </div>
   );
 }
