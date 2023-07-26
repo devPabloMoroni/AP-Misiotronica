@@ -16,7 +16,7 @@ const ProductCard = ({ producto }) => {
 const Store = () => {
   return(
     <div className="store">
-      <h1>Productos Electrónicos</h1>
+      <h2>Productos</h2>
       <div className="card-container">
         {productos.map((producto, index) => (
           <ProductCard key={index} producto={producto} />

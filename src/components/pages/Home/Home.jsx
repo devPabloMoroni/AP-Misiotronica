@@ -2,10 +2,12 @@ import carouselImg1 from './Carrousel-img1.jpg';
 import carouselImg2 from './Carrousel-img2.jpg';
 import carouselImg3 from './Carrousel-img3.jpg';
 
+import Store from '../Store/Store';
+
 
 const Home = () => {
   return(
-    <div className="home">
+    <>
       <div id="carouselExampleCaptions" class="carousel slide carousel-fade">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -44,7 +46,9 @@ const Home = () => {
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-    </div>
+
+      <Store />
+    </>
   )
 };
 
