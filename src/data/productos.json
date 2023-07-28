@@ -5,7 +5,8 @@
     "modelo": "Galaxy S21",
     "precio": 800,
     "stock": 25,
-    "destacado": true
+    "destacado": true,
+    "category": "Category A"
   },
   {
     "nombre": "Portátil",
@@ -13,7 +14,8 @@
     "modelo": "Inspiron 15",
     "precio": 1000,
     "stock": 15,
-    "destacado": true
+    "destacado": true,
+    "category": "Category A"
   },
   {
     "nombre": "Televisor",
@@ -21,7 +23,8 @@
     "modelo": "Bravia 4K",
     "precio": 1200,
     "stock": 10,
-    "destacado": false
+    "destacado": false,
+    "category": "Category A"
   },
   {
     "nombre": "Tablet",
@@ -29,7 +32,8 @@
     "modelo": "iPad Air",
     "precio": 600,
     "stock": 30,
-    "destacado": false
+    "destacado": false,
+    "category": "Category A"
   },
   {
     "nombre": "Cámara DSLR",
@@ -37,7 +41,8 @@
     "modelo": "EOS Rebel T7i",
     "precio": 700,
     "stock": 20,
-    "destacado": true
+    "destacado": true,
+    "category": "Category A"
   },
   {
     "nombre": "Auriculares inalámbricos",
@@ -45,7 +50,8 @@
     "modelo": "WH-1000XM4",
     "precio": 300,
     "stock": 50,
-    "destacado": false
+    "destacado": false,
+    "category": "Category A"
   },
   {
     "nombre": "Altavoz Bluetooth",
@@ -53,7 +59,8 @@
     "modelo": "Charge 4",
     "precio": 150,
     "stock": 40,
-    "destacado": true
+    "destacado": true,
+    "category": "Category A"
   },
   {
     "nombre": "Consola de videojuegos",
@@ -61,7 +68,8 @@
     "modelo": "Xbox Series X",
     "precio": 500,
     "stock": 5,
-    "destacado": true
+    "destacado": true,
+    "category": "Category A"
   },
   {
     "nombre": "Impresora multifuncional",
@@ -69,7 +77,8 @@
     "modelo": "WorkForce Pro WF-4740",
     "precio": 250,
     "stock": 12,
-    "destacado": false
+    "destacado": false,
+    "category": "Category B"
   },
   {
     "nombre": "Reproductor de Blu-ray",
@@ -77,6 +86,7 @@
     "modelo": "BP175",
     "precio": 80,
     "stock": 18,
-    "destacado": false
+    "destacado": false,
+    "category": "Category B"
   }
 ]

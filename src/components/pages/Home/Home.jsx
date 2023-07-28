@@ -2,8 +2,10 @@ import carouselImg1 from './Carrousel-img1.jpg';
 import carouselImg2 from './Carrousel-img2.jpg';
 import carouselImg3 from './Carrousel-img3.jpg';
 
-import Store from '../Store/Store';
+import FilteredProducts from '../../singleComponents/FilteredProducts';
 
+import productos from '../../../data/productos.json';
+import ProductCard from '../../singleComponents/ProductCard';
 
 const Home = () => {
   return(
@@ -47,7 +49,11 @@ const Home = () => {
         </button>
       </div>
 
-      <Store />
+      <h2>Productos Destacados</h2>
+      CAROUSEL DE PRODUCTOS Destacados
+
+      <h2>Filtro de productos</h2>
+      <FilteredProducts />
     </>
   )
 };
