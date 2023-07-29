@@ -1,36 +1,38 @@
 import React, { useState } from 'react';
 import initialItems from '../../data/productos.json';
 
-const ItemList = () => {
-  const [items, setItems] = useState(initialItems);
-  const [selectedCategory, setSelectedCategory] = useState('All'); // State para el filtro
+import ProductCard from './ProductCard';
+
+const FilteredProducts = () => {
+  const [items] = useState(initialItems);
+  const [selectedCategory, setSelectedCategory] = useState('Todos'); // State para el filtro
 
   // Función para cambiar el filtro
-  const handleCategoryChange = (category) => {
-    setSelectedCategory(category);
+  const handleCategoryChange = (categoria) => {
+    setSelectedCategory(categoria);
   };
 
   // Filtrar los elementos según la categoría seleccionada
-  const filteredItems = selectedCategory === 'All'
+  const filteredItems = selectedCategory === 'Todos'
     ? items
-    : items.filter(item => item.category === selectedCategory);
+    : items.filter(producto => producto.categoria === selectedCategory);
 
   return (
-    <div>
+    <>
       {/* Botones para cambiar el filtro */}
-      <button onClick={() => handleCategoryChange('All')}>All</button>
-      <button onClick={() => handleCategoryChange('Category A')}>Category A</button>
-      <button onClick={() => handleCategoryChange('Category B')}>Category B</button>
-      <button onClick={() => handleCategoryChange('Category C')}>Category C</button>
+      <button onClick={() => handleCategoryChange('Todos')}>Todos</button>
+      <button onClick={() => handleCategoryChange('Celulares')}>Celulares</button>
+      <button onClick={() => handleCategoryChange('Computadoras')}>Computadoras</button>
+      <button onClick={() => handleCategoryChange('Media')}>Media</button>
 
       {/* Mostrar la lista filtrada */}
-      <ul>
-        {filteredItems.map(item => (
-          <li key={item.id}>{item.name} - {item.category}</li>
+      <div className="card-container">
+        {filteredItems.map((producto, index) => (
+          <ProductCard key={index} producto={producto} />
         ))}
-      </ul>
-    </div>
+      </div>
+    </>
   );
 };
 
-export default ItemList;
+export default FilteredProducts;
