@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import initialItems from '../../data/productos.json';
 
-import ProductCard from './ProductCard';
+import ProductCard from './ProductCard/ProductCard';
 
 const FeaturedProducts = () => {
   const [items] = useState(initialItems);

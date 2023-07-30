@@ -1,5 +1,4 @@
-import productos from '../../../data/productos.json';
-import ProductCard from '../../singleComponents/ProductCard';
+import FilteredProducts from '../../singleComponents/FilteredProducts';
 
 import './style.css';
 
@@ -7,12 +6,10 @@ import './style.css';
 const Store = () => {
   return(
     <>
-      <h2>Productos</h2>
-      <div className="card-container">
-        {productos.map((producto, index) => (
-          <ProductCard key={index} producto={producto} />
-        ))}
+      <div class="px-4 py-3 my-3 text-center">
+        <h2 class="display-6 fw-bold">PRODUCTOS</h2>
       </div>
+      <FilteredProducts />
     </>
   )
 };

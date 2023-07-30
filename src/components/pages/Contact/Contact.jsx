@@ -1,7 +1,9 @@
 const Contact = () => {
   return(
     <>
-      <h2>Contáctenos!</h2>
+      <div class="px-4 py-3 my-3 text-center">
+        <h2 class="display-6 fw-bold">CONTACTO</h2>
+      </div>
 
       <div class="container text-center">
         <div class="row">

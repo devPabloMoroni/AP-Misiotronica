@@ -9,7 +9,6 @@ import NotFound from './components/pages/NotFound/NotFound';
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
 
-
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const routes = createBrowserRouter(
