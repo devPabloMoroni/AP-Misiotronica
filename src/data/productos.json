@@ -6,7 +6,8 @@
     "precio": 800,
     "stock": 25,
     "destacado": true,
-    "categoria": "Celulares"
+    "categoria": "Celulares",
+    "imagen": "Samsung-Galaxy S21-Celulares.jpg"
   },
   {
     "nombre": "Portátil",
@@ -15,7 +16,8 @@
     "precio": 1000,
     "stock": 15,
     "destacado": true,
-    "categoria": "Computadoras"
+    "categoria": "Computadoras",
+    "imagen": "Dell-Inspiron 15-Computadoras.jpg"
   },
   {
     "nombre": "Televisor",
@@ -24,7 +26,8 @@
     "precio": 1200,
     "stock": 10,
     "destacado": false,
-    "categoria": "Media"
+    "categoria": "Media",
+    "imagen": "Sony-Bravia 4K-Media.jpg"
   },
   {
     "nombre": "Tablet",
@@ -33,7 +36,8 @@
     "precio": 600,
     "stock": 30,
     "destacado": false,
-    "categoria": "Celulares"
+    "categoria": "Celulares",
+    "imagen": "Apple-iPad Air-Celulares.jpg"
   },
   {
     "nombre": "Cámara DSLR",
@@ -42,7 +46,8 @@
     "precio": 700,
     "stock": 20,
     "destacado": true,
-    "categoria": "Media"
+    "categoria": "Media",
+    "imagen": "Canon-EOS Rebel T7i-Media.jpg"
   },
   {
     "nombre": "Auriculares inalámbricos",
@@ -51,7 +56,8 @@
     "precio": 300,
     "stock": 50,
     "destacado": false,
-    "categoria": "Celulares"
+    "categoria": "Celulares",
+    "imagen": "Sony-WH-1000XM4-Celulares.jpg"
   },
   {
     "nombre": "Altavoz Bluetooth",
@@ -60,7 +66,8 @@
     "precio": 150,
     "stock": 40,
     "destacado": true,
-    "categoria": "Celulares"
+    "categoria": "Celulares",
+    "imagen": "JBL-Charge 4-Celulares.jpg"
   },
   {
     "nombre": "Consola de videojuegos",
@@ -69,7 +76,8 @@
     "precio": 500,
     "stock": 5,
     "destacado": true,
-    "categoria": "Computadoras"
+    "categoria": "Computadoras",
+    "imagen": "Microsoft-Xbox Series X-Computadoras.jpg"
   },
   {
     "nombre": "Impresora multifuncional",
@@ -78,7 +86,8 @@
     "precio": 250,
     "stock": 12,
     "destacado": false,
-    "categoria": "Computadoras"
+    "categoria": "Computadoras",
+    "imagen": "Epson-WorkForce Pro WF-4740-Computadoras.jpg"
   },
   {
     "nombre": "Reproductor de Blu-ray",
@@ -87,6 +96,7 @@
     "precio": 80,
     "stock": 18,
     "destacado": false,
-    "categoria": "Media"
+    "categoria": "Media",
+    "imagen": "LG-BP175-Media.jpg"
   }
 ]
