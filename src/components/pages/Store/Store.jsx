@@ -1,8 +1,5 @@
 import FilteredProducts from '../../singleComponents/FilteredProducts';
 
-import './style.css';
-
-
 const Store = () => {
   return(
     <>
