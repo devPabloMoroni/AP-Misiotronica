@@ -20,15 +20,15 @@ const FilteredProducts = () => {
   return (
     <>
       {/* Botones para cambiar el filtro */}
-      <div class="container">
-        <button class="btn btn-secondary btn-sm mb-4 mx-1" onClick={() => handleCategoryChange('Todos')}>Todos</button>
-        <button class="btn btn-secondary btn-sm mb-4" onClick={() => handleCategoryChange('Celulares')}>Celulares</button>
-        <button class="btn btn-secondary btn-sm mb-4 mx-1" onClick={() => handleCategoryChange('Computadoras')}>Computadoras</button>
-        <button class="btn btn-secondary btn-sm mb-4" onClick={() => handleCategoryChange('Media')}>Media</button>
+      <div className="container">
+        <button className="btn btn-secondary btn-sm mb-4 mx-1" onClick={() => handleCategoryChange('Todos')}>Todos</button>
+        <button className="btn btn-secondary btn-sm mb-4" onClick={() => handleCategoryChange('Celulares')}>Celulares</button>
+        <button className="btn btn-secondary btn-sm mb-4 mx-1" onClick={() => handleCategoryChange('Computadoras')}>Computadoras</button>
+        <button className="btn btn-secondary btn-sm mb-4" onClick={() => handleCategoryChange('Media')}>Media</button>
       </div>
       
       {/* Mostrar la lista filtrada */}
-      <div class="container mx-auto row row-cols-1 row-cols-md-3 row-cols-lg-5 g-4 mb-4">
+      <div className="container mx-auto row row-cols-1 row-cols-md-3 row-cols-lg-5 g-4 mb-4">
         {filteredItems.map((producto, index) => (
           <ProductCard key={index} producto={producto} />
         ))}

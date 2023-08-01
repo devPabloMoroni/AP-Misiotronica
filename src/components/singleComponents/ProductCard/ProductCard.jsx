@@ -14,15 +14,15 @@ console.log(imageList); */
 const ProductCard = ({ producto }) => {
   return (
       <>
-        <div class="col">
-          <div class="card">
-            <img src={require("../../../assets/img/products/" + producto.imagen)} class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title"> {producto.nombre}</h5>
-              <p class="card-text">Marca: {producto.marca}</p>
-              <p class="card-text">Modelo:  {producto.modelo}</p>
-              <p class="card-text">Precio: ${producto.precio}</p>
-              <p class="card-text"><small class="text-muted">Stock: {producto.stock}</small></p>
+        <div className="col">
+          <div className="card">
+            <img src={require("../../../assets/img/products/" + producto.imagen)} className="card-img-top" alt="..." />
+            <div className="card-body">
+              <h5 className="card-title"> {producto.nombre}</h5>
+              <p className="card-text">Marca: {producto.marca}</p>
+              <p className="card-text">Modelo:  {producto.modelo}</p>
+              <p className="card-text">Precio: ${producto.precio}</p>
+              <p className="card-text"><small className="text-muted">Stock: {producto.stock}</small></p>
             </div>
           </div>
         </div>

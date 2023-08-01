@@ -12,7 +12,7 @@ const FeaturedProducts = () => {
   };
 
   return (
-    <div class="mx-auto row row-cols-1 row-cols-md-3 row-cols-lg-5 g-4">
+    <div className="mx-auto row row-cols-1 row-cols-md-3 row-cols-lg-5 g-4">
       {/* Mostrar la lista filtrada */}
         {getHighlightedItems().map((producto,index) => (
           <ProductCard key={index} producto={producto} />

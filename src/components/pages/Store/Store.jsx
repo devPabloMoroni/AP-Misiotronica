@@ -1,10 +1,12 @@
 import FilteredProducts from '../../singleComponents/FilteredProducts';
+import Aside from '../../singleComponents/Aside/Aside';
 
 const Store = () => {
   return(
     <>
-      <div class="px-4 py-3 my-3 text-center">
-        <h2 class="display-6 fw-bold">PRODUCTOS</h2>
+      <Aside />
+      <div className="px-4 py-3 my-3 text-center">
+        <h2 className="display-6 fw-bold">PRODUCTOS</h2>
       </div>
       <FilteredProducts />
     </>
