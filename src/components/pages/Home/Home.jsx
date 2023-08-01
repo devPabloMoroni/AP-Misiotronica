@@ -4,7 +4,7 @@ import Information from './Information/Information';
 
 const Home = () => {
   return(
-    <>
+    <div class="mb-5">
       <Carousel />
 
       <Information />
@@ -15,7 +15,7 @@ const Home = () => {
       <FeaturedProducts />
 
      
-    </>
+    </div>
   )
 };
 

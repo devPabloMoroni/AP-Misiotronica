@@ -26,7 +26,7 @@ function App() {
     <>
       <Navbar />
       <RouterProvider router={routes} />
-      <Footer />
+      <Footer />      
     </>
       
   );
