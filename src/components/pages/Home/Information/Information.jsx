@@ -3,7 +3,7 @@ import logo from '../../../Navbar/NavLogo.png'
 const Information = () => {
   return(
     <>
-      <div className="px-4 py-5 my-5 text-center">
+      <div className="px-4 py-2 my-5 text-center">
         <img className="d-block mx-auto mb-4" src={logo} alt="" width="72" height="57" />
         <h1 className="display-5 fw-bold">MISIOTRÓNICA</h1>
         <div className="col-lg-6 mx-auto">
