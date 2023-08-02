@@ -7,25 +7,25 @@ El sitio en cuestión debe estar desarrollado utilizando REACT y debe contar con
 clave:_
 
 1. El nombre y el logo de la empresa deben estar en la sección de la navegación de la página web.
-   **Se realiza una barra de navegacion en la cual se coloca el logo y el nombre de la empresa**
+   **Se realiza una barra de navegación en la cual se coloca el logo y el nombre de la empresa**
 2. Debe contar con seis artículos diferentes disponibles a la venta, como mínimo.
    **Se crea un archivo "productos.json" con un array de 10 objetos "producto"**
 3. Debe tener una sección de Sobre Nosotros, una de Venta y una de Contacto.
-   **Se crean las secciones solicitadas. TODO: Estilizar mejor "Contacto" y agregar un formulario de envio**
+   **Se crean las secciones solicitadas. TODO: Agregar un formulario de envío**
 4. Se debe implementar el uso de componentes reutilizables.
    **Se implementa el uso de componentes reutilizables en componentes generales. TODO: modularizar el resto de los componentes, P/Ej: botones**
 5. Se debe implementar el manejo de estados y eventos.
-   **Se implementa en la utilizacion del filtro de productos según "Categoria" en la pagina de Tienda**
+   **Se implementa en la utilización del filtro de productos según "Categoria" (Tienda) y en el botón de busqueda**
 6. Debe estar implementado el uso de enrutamientos.
    **Se implementa el enrutamiento usando react-router**
 7. Debe implementarse una página personalizada de Página Inexistente.
-   **Se crea la pagina personalizada 404**
+   **Se crea la página personalizada 404**
 8. Se debe incorporar un menú lateral para poder acceder a distintas rutas de la página.
    **Se incorpora un menú hamburguesa que resulta visible al desaparecer el navbar superior y permite navegar por el resto del sitio**
 9. Debe incorporarse una barra de búsqueda de artículos.
-   **Se incorpora una barra de busqueda en el navbar superior. TODO: Agregarle funcionamiento**
+   **Se incorpora una barra de búsqueda en el navbar superior. TODO: Lograr que busque sin importar mayúsculas y minúsculas**
 10. El sitio web debe ser responsivo a los diferentes dispositivos.
-    **Se utiliza Bootrstrap 5 que permite dicha caracteristica**
+    **Se utiliza Bootrstrap 5 que permite dicha característica**
 
 Nota: Evitar subir la carpeta node_modules al repositorio, la excepción debe realizarse mediante el
 archivo .gitignore; adicionalmente, la revisión de archivos agregados antes de cambios locales es una
