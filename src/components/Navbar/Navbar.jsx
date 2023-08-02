@@ -1,6 +1,7 @@
 import navLogo from './NavLogo.png';
 
 import SearchBar from '../singleComponents/SearchBar/SearchBar';
+import ShopCart from '../singleComponents/ShopCart/ShopCart';
 
 const Navbar = () => {
   return(
@@ -30,6 +31,7 @@ const Navbar = () => {
                 <a className="nav-link active" aria-current="page" href="/acerca">Acerca de</a>
               </li>
             </ul>
+            <ShopCart/>
             <SearchBar />
           </div>
         </div>
