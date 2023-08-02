@@ -1,34 +1,70 @@
 import React, { useState } from 'react';
+import initialItems from '../../../data/productos.json';
 
-const SearchBar = ({ products, onSearch }) => {
-  const [searchTerm, setSearchTerm] = useState('');
+import ProductCard from "../ProductCard/ProductCard";
+
+const SearchBar = () => {
+  const [items] = useState(initialItems);
+
+  const [searchValue, setSearchValue] = useState("");
 
   const handleSearchChange = (event) => {
-    setSearchTerm(event.target.value);
+    setSearchValue(event.target.value);
   };
 
-  const handleSearch = () => {
-    // Filtrar los productos por el término de búsqueda
-    const filteredProducts = products.filter((product) =>
-      product.name.toLowerCase().includes(searchTerm.toLowerCase())
-    );
-
-    // Llamar a la función de búsqueda pasando los productos filtrados
-    onSearch(filteredProducts);
+  const handleSearchSubmit = (event) => {
+    event.preventDefault();
+    setSearchValue(event.target.value);
   };
 
+  const getHighlightedItems = () => {
+    return items.filter(producto => 
+      producto.nombre.includes(searchValue) ||
+      producto.marca.includes(searchValue) ||
+      producto.modelo.includes(searchValue) ||
+      producto.categoria.includes(searchValue)
+      );
+  };
+  
   return (
-    <div>
-      <input
-        type="search"
-        className="form-control me-2"
-        value={searchTerm}
-        onChange={handleSearchChange}
-        placeholder="Buscar por nombre de producto..."
-        aria-label="Buscar"
-      />
-      <button onClick={handleSearch}>Buscar</button>
-    </div>
+    <>
+      <form className="d-flex" role="search" onSubmit={handleSearchSubmit}>
+        <input 
+          className="form-control me-2" 
+          type="search" 
+          placeholder="Buscar" 
+          aria-label="Buscar" 
+          value={searchValue}
+          onChange={handleSearchChange} 
+        />
+        <button className="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#exampleModal" type="button">
+            Buscar
+        </button>
+      </form>
+
+      <div className="modal fade" id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div className="modal-dialog modal-dialog-scrollable">
+          <div className="modal-content">
+            <div className="modal-header">
+              <h1 className="modal-title fs-5" id="exampleModalLabel">Resultado de la Búsqueda</h1>
+              <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div className="modal-body">
+            <div className="mx-auto row g-4">                
+              {/* Mostrar la lista filtrada */}
+                {getHighlightedItems().map((producto,index) => (
+                  <ProductCard key={index} producto={producto} />
+                ))}
+            </div>
+            </div>
+            <div className="modal-footer">
+              <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              <a href="/tienda"><button type="button" className="btn btn-primary">Ir a la tienda</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
   );
 };
 

@@ -1,5 +1,7 @@
 import navLogo from './NavLogo.png';
 
+import SearchBar from '../singleComponents/SearchBar/SearchBar';
+
 const Navbar = () => {
   return(
     <>
@@ -28,10 +30,7 @@ const Navbar = () => {
                 <a className="nav-link active" aria-current="page" href="/acerca">Acerca de</a>
               </li>
             </ul>
-            <form className="d-flex" role="search">
-              <input className="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar" />
-              <button className="btn btn-outline-success" type="submit">Buscar</button>
-            </form>
+            <SearchBar />
           </div>
         </div>
       </nav>
