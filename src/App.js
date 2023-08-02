@@ -17,6 +17,7 @@ const routes = createBrowserRouter(
     {path: '/acerca', element:<About />},
     {path: '/contacto', element:<Contact />},
     {path: '/tienda', element:<Store />},
+    {path: '/busqueda', element:<Store />},
     {path: '/*', element:<NotFound />},
   ]
 );
@@ -28,7 +29,6 @@ function App() {
       <RouterProvider router={routes} />
       <Footer />   
     </>
-      
   );
 }
 

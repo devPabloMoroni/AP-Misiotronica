@@ -14,8 +14,6 @@ const Home = () => {
         <h3 className="display-7 fw-bold">PRODUCTOS DESTACADOS</h3>
       </div>
       <FeaturedProducts />
-
-     
     </div>
   )
 };

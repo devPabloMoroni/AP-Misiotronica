@@ -1,6 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import './aside.css';
 
+const burgerIcon = <svg width="25" height="25" fill="currentColor" className="bi bi-list" viewBox="0 0 16 16">
+<path fillRule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+</svg>
+
 const Aside = () => {
   const [showButton, setShowButton] = useState(false);
 
@@ -23,14 +27,11 @@ const Aside = () => {
   }, []);
 
   return(
-    <>
-
-      <button id="myButton" className= {showButton ? 'btn btn-primary floating' : 'hidden'} type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
-        <svg width="25" height="25" fill="currentColor" className="bi bi-list" viewBox="0 0 16 16">
-          <path fillRule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-        </svg>
+    <aside>
+      <button id="myButton" className= {showButton ? 'btn btn-primary floating' : 'hidden'} 
+        type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+          { burgerIcon }
       </button>
-
       <div className="offcanvas offcanvas-start" data-bs-backdrop="static" tabIndex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
         <div className="offcanvas-header">
           <button type="button" className="btn-close custom-close-btn" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -44,8 +45,7 @@ const Aside = () => {
           </nav>
         </div>
       </div>
-    </>
-    
+    </aside>
   )
 };
 

@@ -18,48 +18,55 @@ const chat = <svg width="2em" height="2em" fill="currentColor" className="bi p-2
 
 const Contact = () => {
   return(
-    <>
+    <div class="container">
       <Aside />
       <div className="px-4 py-3 my-3 text-center">
         <h2 className="display-6 fw-bold">CONTACTO</h2>
       </div>
 
-      <div className="container px-4 py-5" id="featured-3">
-        <div className="row g-4 py-3 row-cols-1 row-cols-lg-3">
-          <div className="feature col">
-            <div className="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
-              {telefono}
-            </div>
-            <h3 className="fs-2">Teléfonos</h3>
-            <p>+549 3758 336699</p>
-            <p>+549 3751 224488</p>
-          </div>
-          <div className="feature col">
-            <div className="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
-              {email}
-            </div>
-            <h3 className="fs-2">Email</h3>
-            <p>contacto@misiotronica.com.ar</p>
-            <p>soporte@misiotronica.com.ar</p>
-            <p>ventas@misiotronica.com.ar</p>
-            <a href="mailto:contacto@misiotronica.com.ar">
-              <button type="button" className="btn btn-primary">Enviar Correo</button>
-            </a>
-          </div>
-          <div className="feature col">
-            <div className="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
-              {chat}
-            </div>
-            <h3 className="fs-2">Chat</h3>
-            <p>Chatea con nosotros!</p>
-            <a href="https://wa.me/543758336699/?text=Hola! Estoy mirando la Web de Misiotronica y tengo una consulta..." 
-            target="_blank" rel="noreferrer">
-              <button type="button" className="btn btn-primary">Ir al Chat</button>
-            </a>
+      <div class="row align-items-md-stretch">
+        <div class="col-md-6 col-lg-4 mb-3">
+          <div class="h-100 p-5 bg-body-tertiary border rounded-3  text-center">
+            <div className="feature-icon d-inline-flex align-items-center 
+                justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+                  {telefono}
+              </div>
+              <h3 className="fs-2">Teléfonos</h3>
+              <p>+549 3758 336699</p>
+              <p>+549 3751 224488</p>
           </div>
         </div>
+        <div class="col-md-6 col-lg-4 mb-3">
+          <div class="h-100 p-5 bg-body-tertiary border rounded-3  text-center">
+            <div className="feature-icon d-inline-flex align-items-center 
+                justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+                  {email}
+              </div>
+              <h3 className="fs-2">Email</h3>
+              <p>contacto@misiotronica.com.ar</p>
+              <p>soporte@misiotronica.com.ar</p>
+              <p>ventas@misiotronica.com.ar</p>
+              <a href="mailto:contacto@misiotronica.com.ar">
+                <button type="button" className="btn btn-primary">Enviar Correo</button>
+              </a>
+            </div>
+        </div>
+        <div class="col-md-12 col-lg-4 mb-3">
+          <div class="h-100 p-5 bg-body-tertiary border rounded-3  text-center">
+            <div className="feature-icon d-inline-flex align-items-center 
+                justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+                  {chat}
+              </div>
+              <h3 className="fs-2">Chat</h3>
+              <p>Chatea con nosotros!</p>
+              <a href="https://wa.me/543758336699/?text=Hola! Estoy mirando la Web de Misiotronica y tengo una consulta..." 
+              target="_blank" rel="noreferrer">
+                <button type="button" className="btn btn-primary">Ir al Chat</button>
+              </a>
+            </div>
+        </div>
       </div>
-    </>
+    </div>
   )
 };
 
