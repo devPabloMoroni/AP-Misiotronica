@@ -86,7 +86,7 @@ const Contact = () => {
                 <label htmlFor="floatingInput">Correo electrónico</label>
               </div>
               <div className="form-group form-floating">
-                <input type="text" className="form-control" id="floatingMessage" placeholder="Mensaje" required />
+                <textarea type="text" className="form-control" id="floatingMessage" placeholder="Mensaje" required></textarea>
                 <label htmlFor="floatingMessage">Mensaje</label>
               </div>
               <button type="submit" className="btn btn-primary mt-3">Enviar</button>
