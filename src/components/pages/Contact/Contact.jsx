@@ -26,7 +26,7 @@ const Contact = () => {
 
       <div className="row align-items-md-stretch">
         <div className="col-md-6 col-lg-4 mb-3">
-          <div className="h-100 p-5 bg-body-tertiary border rounded-3  text-center">
+          <div className="h-100 p-5 bg-body-tertiary border rounded-3 text-center">
             <div className="feature-icon d-inline-flex align-items-center 
                 justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
                   {telefono}
@@ -37,7 +37,7 @@ const Contact = () => {
           </div>
         </div>
         <div className="col-md-6 col-lg-4 mb-3">
-          <div className="h-100 p-5 bg-body-tertiary border rounded-3  text-center">
+          <div className="h-100 p-5 bg-body-tertiary border rounded-3 text-center">
             <div className="feature-icon d-inline-flex align-items-center 
                 justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
                   {email}
@@ -52,7 +52,7 @@ const Contact = () => {
             </div>
         </div>
         <div className="col-md-12 col-lg-4 mb-3">
-          <div className="h-100 p-5 bg-body-tertiary border rounded-3  text-center">
+          <div className="h-100 p-5 bg-body-tertiary border rounded-3 text-center">
             <div className="feature-icon d-inline-flex align-items-center 
                 justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
                   {chat}
@@ -64,6 +64,34 @@ const Contact = () => {
                 <button type="button" className="btn btn-primary">Ir al Chat</button>
               </a>
             </div>
+        </div>
+      </div>
+
+      <div>
+        <div className="col-md-12 mb-3">
+          <div className="h-100 p-5 bg-body-tertiary border rounded-3 text-center">
+            <h3 className="fs-2">Ninguna de las anteriores?</h3>
+            <h3 className="fs-5">Dejanos un mensaje y nos contactámos nosotros!</h3>
+            <form className="form-inline">
+              <div className="form-group form-floating mb-3">
+                <input type="name" className="form-control" id="floatingName" placeholder="Juan Perez" required />
+                <label for="floatingName">Nombre</label>
+              </div>
+              <div className="form-group form-floating mb-3">
+                <input type="phone" className="form-control" id="floatingPhone" placeholder="2964 549941" />
+                <label for="floatingPhone">Teléfono</label>
+              </div>
+              <div className="form-group form-floating mb-3">
+                <input type="email" className="form-control" id="floatingInput" placeholder="name@example.com" required />
+                <label for="floatingInput">Correo electrónico</label>
+              </div>
+              <div className="form-group form-floating">
+                <input type="text" className="form-control" id="floatingMessage" placeholder="Mensaje" required />
+                <label for="floatingMessage">Mensaje</label>
+              </div>
+              <button type="submit" className="btn btn-primary mt-3">Enviar</button>
+            </form>   
+          </div>
         </div>
       </div>
     </div>
