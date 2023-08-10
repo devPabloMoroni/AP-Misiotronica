@@ -14,7 +14,7 @@ console.log(imageList); */
 const ProductCard = ({ producto }) => {
   return (
       <>
-        <div className="col">
+        <div className="col mb-2">
           <div className="card">
             <img src={require("../../../assets/img/products/" + producto.imagen)} className="card-img-top" alt="..." />
             <div className="card-body">

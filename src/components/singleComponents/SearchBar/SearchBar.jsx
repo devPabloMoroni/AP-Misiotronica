@@ -18,11 +18,13 @@ const SearchBar = () => {
   };
 
   const getHighlightedItems = () => {
+    const lowerCaseSearchValue = searchValue.toLowerCase();
+
     return items.filter(producto => 
-      producto.nombre.includes(searchValue) ||
-      producto.marca.includes(searchValue) ||
-      producto.modelo.includes(searchValue) ||
-      producto.categoria.includes(searchValue)
+      producto.nombre.toLowerCase().includes(lowerCaseSearchValue) ||
+      producto.marca.toLowerCase().includes(lowerCaseSearchValue) ||
+      producto.modelo.toLowerCase().includes(lowerCaseSearchValue) ||
+      producto.categoria.toLowerCase().includes(lowerCaseSearchValue)
       );
   };
   
@@ -50,7 +52,7 @@ const SearchBar = () => {
               <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body">
-            <div className="mx-auto row g-4">                
+            <div className="mx-auto row-sm-2 g-4">                
               {/* Mostrar la lista filtrada */}
                 {getHighlightedItems().map((producto,index) => (
                   <ProductCard key={index} producto={producto} />
