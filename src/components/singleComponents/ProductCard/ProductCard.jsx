@@ -14,14 +14,14 @@ console.log(imageList); */
 const ProductCard = ({ producto }) => {
   return (
       <>
-        <div className="col mb-2">
+        <div className="card-group col mb-2">
           <div className="card">
             <img src={require("../../../assets/img/products/" + producto.imagen)} className="card-img-top" alt="..." />
             <div className="card-body">
-              <h5 className="card-title"> {producto.nombre}</h5>
+              <h5 className="card-title text-center"> {producto.nombre}</h5>
               <p className="card-text">Marca: {producto.marca}</p>
               <p className="card-text">Modelo:  {producto.modelo}</p>
-              <p className="card-text">Precio: ${producto.precio}</p>
+              <p className="card-text text-end fw-bold">Precio: ${producto.precio}</p>
               <p className="card-text"><small className="text-muted">Stock: {producto.stock}</small></p>
             </div>
           </div>
