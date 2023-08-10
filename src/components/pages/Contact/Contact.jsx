@@ -75,19 +75,19 @@ const Contact = () => {
             <form className="form-inline">
               <div className="form-group form-floating mb-3">
                 <input type="name" className="form-control" id="floatingName" placeholder="Juan Perez" required />
-                <label for="floatingName">Nombre</label>
+                <label htmlFor="floatingName">Nombre</label>
               </div>
               <div className="form-group form-floating mb-3">
                 <input type="phone" className="form-control" id="floatingPhone" placeholder="2964 549941" />
-                <label for="floatingPhone">Teléfono</label>
+                <label htmlFor="floatingPhone">Teléfono</label>
               </div>
               <div className="form-group form-floating mb-3">
                 <input type="email" className="form-control" id="floatingInput" placeholder="name@example.com" required />
-                <label for="floatingInput">Correo electrónico</label>
+                <label htmlFor="floatingInput">Correo electrónico</label>
               </div>
               <div className="form-group form-floating">
                 <input type="text" className="form-control" id="floatingMessage" placeholder="Mensaje" required />
-                <label for="floatingMessage">Mensaje</label>
+                <label htmlFor="floatingMessage">Mensaje</label>
               </div>
               <button type="submit" className="btn btn-primary mt-3">Enviar</button>
             </form>   
