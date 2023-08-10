@@ -9,6 +9,7 @@ const SearchBar = () => {
   const [searchValue, setSearchValue] = useState("");
 
   const handleSearchChange = (event) => {
+    event.preventDefault();
     setSearchValue(event.target.value);
   };
 
@@ -16,6 +17,12 @@ const SearchBar = () => {
     event.preventDefault();
     setSearchValue(event.target.value);
   };
+
+  const handleKeyDown = (event) => {
+    if (event.keyCode === 13 ) {
+      event.preventDefault();
+    }
+  }
 
   const getHighlightedItems = () => {
     const lowerCaseSearchValue = searchValue.toLowerCase();
@@ -38,6 +45,7 @@ const SearchBar = () => {
           aria-label="Buscar" 
           value={searchValue}
           onChange={handleSearchChange} 
+          onKeyDown={handleKeyDown}
         />
         <button className="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#exampleModal" type="button">
             Buscar
